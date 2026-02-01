@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: dolphin-phi
+    env: docker
+    region: oregon
+    plan: starter
+    autoDeploy: false
+    envVars:
+      - key: API_TOKEN
+        sync: false
